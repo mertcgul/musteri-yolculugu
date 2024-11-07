@@ -1,131 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Customer Journey Form</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-
-
 <div class="customer-journey">
+    <h1>Customer Journey for Restaurants</h1>
 
-    <!-- Pre -->
+    <!-- Restaurant's Name ve Observer Alanları -->
+    <div class="form-header">
+        <label>
+            Restaurant's Name:
+            <input type="text" id="restaurant-name" placeholder="Enter restaurant's name">
+        </label>
+        <label>
+            Observer:
+            <input type="text" id="observer-name" placeholder="Enter observer's name">
+        </label>
+    </div>
 
+    <!-- Pre-Experience Aşaması -->
     <div class="stage">
-
         <h2>Pre-Experience</h2>
-
         <div class="step">
-
             <h3>Search and Understanding Details</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
         <div class="step">
-
             <h3>Making Reservations and Being Informed</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
     </div>
 
-
-
-    <!-- During -->
-
+    <!-- During Experience Aşaması -->
     <div class="stage">
-
         <h2>During Experience</h2>
-
         <div class="step">
-
             <h3>Entering and Greeting by Front Desk</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
         <div class="step">
-
             <h3>Interior and Table Setting</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
-        <div class="step">
-
-            <h3>Reviewing Menu and Giving Order</h3>
-
-            <textarea placeholder="Write your experience here..."></textarea>
-
-        </div>
-
-        <div class="step">
-
-            <h3>Asking Questions and Getting Suggestions</h3>
-
-            <textarea placeholder="Write your experience here..."></textarea>
-
-        </div>
-
-        <div class="step">
-
-            <h3>Receiving the Drinks and Food, Enjoying </h3>
-
-            <textarea placeholder="Write your experience here..."></textarea>
-
-        </div>
-
     </div>
 
-
-
-    <!-- Post -->
-
+    <!-- Post-Experience Aşaması -->
     <div class="stage">
-
         <h2>Post-Experience</h2>
-
         <div class="step">
-
             <h3>Payment and Leaving</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
         <div class="step">
-
             <h3>Goodbye and Next Visit Encouragement</h3>
-
             <textarea placeholder="Write your experience here..."></textarea>
-
+            <textarea placeholder="Your feelings about that experience..."></textarea>
+            <textarea placeholder="Notes and extraordinary moments..."></textarea>
         </div>
-
     </div>
 
+    <!-- Submit Butonu -->
+    <button type="submit" id="submit-button">Submit</button>
 </div>
 
-
-
 <script src="script.js"></script>
-
 </body>
-
 </html>

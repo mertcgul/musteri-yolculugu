@@ -3,10 +3,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f3f4f6; /* Hafif gri arka plan */
 }
 
 .customer-journey {
@@ -14,16 +14,18 @@ body {
     margin: auto;
     background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-top: 5px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #6c5ce7; /* Ana renk */
+    position: relative;
 }
 
 h1 {
     text-align: center;
-    font-size: 24px;
-    color: #007bff;
+    font-size: 26px;
+    color: #6c5ce7;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .form-header {
@@ -31,6 +33,9 @@ h1 {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0e6ff;
+    border-radius: 8px;
 }
 
 .form-header label {
@@ -43,10 +48,10 @@ h1 {
 .form-header input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
     margin-top: 5px;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
 }
 
 @media (min-width: 600px) {
@@ -58,12 +63,26 @@ h1 {
 
 .stage {
     margin-bottom: 30px;
+    background-color: #ffe6e6; /* Farklı renk tonları için ayarlanabilir */
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #ff7675; /* Renk uyumu için sol çerçeve */
+}
+
+.stage:nth-child(even) {
+    background-color: #e6f7ff;
+    border-left-color: #74b9ff;
+}
+
+.stage:nth-child(odd) {
+    background-color: #e8f5e9;
+    border-left-color: #81c784;
 }
 
 .stage h2 {
     font-size: 20px;
-    color: #333;
-    border-bottom: 2px solid #007bff;
+    color: #555;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -72,19 +91,22 @@ h1 {
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
 }
 
 .step:hover {
-    background-color: #e8f4ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .step h3 {
     font-size: 18px;
     color: #333;
     margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .step textarea {
@@ -92,11 +114,11 @@ h1 {
     height: 60px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     resize: vertical;
     font-size: 16px;
-    margin-top: 10px;
-    background-color: #fff;
+    background-color: #fafafa;
+    margin-top: 8px;
 }
 
 .step textarea::placeholder {
@@ -108,15 +130,16 @@ h1 {
     padding: 12px;
     font-size: 18px;
     color: white;
-    background-color: #007bff;
+    background-color: #6c5ce7;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #submit-button:hover {
-    background-color: #0056b3;
+    background-color: #4c46b1;
+    box-shadow: 0 4px 10px rgba(108, 92, 231, 0.3);
 }
 
 /* Mobil uyumluluk */
